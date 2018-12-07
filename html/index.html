@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fest</title>
+	<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet'>
+
+	<style type="text/css">
+	p{
+		 font-family:Alfa Slab One;
+		 color:rgb(255, 153, 204);
+	}
+		img{
+
+			/*width: 100px;
+			height:100px;
+			border-radius: 100px;/*
+			    border: solid 1px rgb(255, 153, 204);*/
+			    padding:30px 10px 10px 10px;
+
+
+		}
+
+
+
+
+		.text1,.text2,.text3, .text4{
+			padding: 0;
+			margin:0;
+			font-family: 'Arbutus';
+			font-size: 22px;
+		}
+
+		.container3{
+			text-align: center;
+			position: absolute;
+			top: 25%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+		}
+		.container1 p{
+			text-align: center;
+			position: absolute;
+			top: 90%;
+			left:40%;
+			transform: translate(-50%,-50%)
+			width: 100%;
+
+		}
+		.container3 span{
+			color:#ffcc99;
+			text-transform: uppercase;
+			display: block;
+		}
+	       .text3, .text4{
+
+			font-size: 30px;
+
+			letter-spacing: 8px;
+			margin-bottom: 10px;
+
+			position: relative;
+			animation: text 3s 1;
+		}
+		.text2,.text1{
+			font-size: 30px;
+
+		}
+
+		@keyframes text{
+			0%{
+				color:rgb(255, 204, 102);
+				margin-bottom: -40px;
+			}
+			30%{
+				letter-spacing: 25px;
+				margin-bottom: -40px;
+			}
+			85%{
+				color:rgb(153, 255, 102);
+				letter-spacing: 8px;
+				margin-bottom: -40px;
+			}
+		}
+
+
+		.container2{
+			position: absolute;
+			top: 70%;
+			left:50%;
+			text-decoration: none;
+			transform: translate(-50%,-50%);
+
+		}
+		a{
+			color: white;
+			text-decoration:none;
+			text-align: center;
+			width:130px;
+			padding:1em 0;
+			display:inline-block;
+			background-color: #000;
+		}
+
+		a:visited
+{
+    text-decoration: none;
+    decoration: none;
+}
+body{
+	margin:0;
+	padding: 0;
+
+
+
+
+}
+
+      section{
+      	height: 110vh;
+      background: url('https://collegefest.com/wp-content/uploads/2016/01/banner-bg-1-1-min.jpg');
+      	background-size: 100%;
+      	background-repeat: no-repeat;
+      	background-size: auto;
+        overflow: hidden;
+      }
+
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 40%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn{
+       width: 100%;
+    }
+}
+.textcolor{
+    display: block;
+    font-style: bold;
+		font-family: Arial, Helvetica, sans-serif;
+		 color: dodgerblue;
+		 background: white;
+}
+.textcolor1{
+    display: block;
+    font-style: bold;
+		font-family: Arial, Helvetica, sans-serif;
+		 color: black;
+		 background: white;
+}
+
+	</style>
+</head>
+<body>
+<section>
+<div class="container3">
+	<span class="text1">Welcome</span>
+	<span class="text2">To</span>
+	<span class="text3">Cultural Fest</span>
+	<span class="text4">2K19</span>
+</div>
+
+	<nav class="container2">
+		<a href="events.html">EVENTS</a>
+		<a href="gallery.html">GALLERY</a>
+		<a onclick="document.getElementById('id02').style.display='block'" style="width:130px;">INSTRUCTIONS</a>
+		<a onclick="document.getElementById('id01').style.display='block'" style="width:130px;">CONTACT US</a>
+
+	</nav>
+	<div id="id01" class="modal">
+<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+<form class="modal-content" action="/action_page.php">
+
+<div class="container">
+	<h1>Contact details :</h1>
+	<hr>
+	<p><span >Dr. V. Maria Anu/ IT Dept.</span></p>
+	<p>Dr. Ganesan / ETCE Dept.</p>
+	<p><span > Ms.Refona / CSE Dept.</span></p>
+	<p>Ms. Karunya Rathan /IT Dept.</p>
+	<address><h3>Email us at</h3> <a class="textcolor" href="mailto:culturals@sathyabama.ac.in">culturals@sathyabama.ac.in</a>
+	</address>
+	<div class="clearfix">
+	        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">close</button>
+</div>
+</div>
+</form>
+</div>
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Genral Instructions</h1>
+      <hr>
+			 <ul>
+			 	<li>Prelims will be conducted between 12.00 noon to 3.00 pm from 4th February 2019 onwards.</li>
+				<li>Every participant is requested to register online for the corresponding event using Google Form.</li>
+				<li>For group events only one registration is required for a team.</li>
+				<li>Registration commences from 3rd January 2019 and closes by 1st February 2019.</li>
+				<li>Necessary materials and instruments have to be brought by the participants for all the events</li>
+				<li>Decision of the judge is final for all the events.</li>
+				<li>Participation in all events is restricted only for Sathyabama students except Final Years.</li>
+				<li>No act shall contain any offensive, obscene, disrespectful actions or gestures. The act will be
+immediately stopped and the entry will be disqualified, if these instructions are not followed.
+</li>
+			 </ul>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">close</button>
+
+      </div>
+    </div>
+  </form>
+</div>
+	<div class="container1">
+		<p>Developed by Ch.sasank (3rd year)</p>
+
+	</div>
+
+	<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	$('section').mousemove(function(e){
+		var moveX=(e.pageX * -1 / 15);
+		var moveY=(e.pageY * -1 / 15);
+		$(this).css('background-position',moveX + 'px ' + moveY + 'px ')
+
+	})
+</script>
+</section>
+</body>
+</html>
