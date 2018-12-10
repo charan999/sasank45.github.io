@@ -7,6 +7,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
+
+body,html {
+
+    margin: 0;
+
+}
 .container {
     position: relative;
     width: 100%;
@@ -48,7 +54,7 @@ img:hover {
     background-color: #555;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
+    padding: 8px 16px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -75,12 +81,43 @@ hr {
 </style>
 </head>
 <body>
+  <div class="container">
+    <img src="images/dance.png" alt="Guest" style="width:100%">
+       <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Guest Performance</button>
+    <a class="ab" href="https://goo.gl/forms/n6OHYJHSyAOAA7MG2"><span class="blinking">Click To Register!</span></a>
+
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Rules for solo and group</h4>
+          </div>
+          <div class="modal-body">
+             <ol>
+               <h3>Guest Performance</h3>
+               <li>Traditional dancers are requested to register for inaugural dance performance.</li>
+               <li>You can register as a team (min 6 members) or individual.</li>
+               <li>Individuals will be combined to form a team.</li>
+               <h4>Kindly note this performance will not be <br>included in competition.</h4>
+               <br>
+             </ol>
+              <h3>NOTE: Please follow the general instructions sections.</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="container">
-  <img src="images/dance.png" alt="Dance" style="width:100%">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Dance</button>
+  <img src="images/western.png" alt="Dance" style="width:100%">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Dance</button>
   <a class="ab" href="https://goo.gl/forms/gfcRJh4WIsyOkDDq1"><span class="blinking">Click To Register!</span>
 </a>
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="myModal1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -121,9 +158,9 @@ hr {
 </div>
 <div class="container">
   <img src="images/music.png" alt="music" style="width:100%">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Music</button>
-  <a class="ab" href="#"><span class="blinking">Click To Register!</span></a>
-  <div class="modal fade" id="myModal1" role="dialog">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Music</button>
+  <a class="ab" href="https://goo.gl/forms/81X8x2XoKcE7ulTJ2"><span class="blinking">Click To Register!</span></a>
+  <div class="modal fade" id="myModal2" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -159,9 +196,9 @@ hr {
 </div>
 <div class="container">
   <img src="images/fashion.png" alt="fashion" style="width:100%">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Fashion</button>
-  <a class="ab" href="#"><span class="blinking">Click To Register!</span></a>
-  <div class="modal fade" id="myModal2" role="dialog">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Fashion</button>
+  <a class="ab" href="https://goo.gl/forms/RPWUjD2mpzZAc0Ns2"><span class="blinking">Click To Register!</span></a>
+  <div class="modal fade" id="myModal3" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -198,9 +235,9 @@ hr {
 </div>
 <div class="container">
   <img src="images/drama.png" alt="drama" style="width:100%">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Drama</button>
-  <a class="ab" href="#"><span class="blinking">Click To Register!</span></a>
-  <div class="modal fade" id="myModal3" role="dialog">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Drama</button>
+  <a class="ab" href="https://goo.gl/forms/7yHMDp6oGyjTVuq72"><span class="blinking">Click To Register!</span></a>
+  <div class="modal fade" id="myModal4" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -244,9 +281,9 @@ hr {
 <div class="container">
   <img src="images/library.png" alt="Literacy" style="width:100%">
     <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Literacy</button>
-  <a class="ab" href="#"><span class="blinking">Click To Register!</span></a>
-  <div class="modal fade" id="myModal4" role="dialog">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Literacy</button>
+  <a class="ab" href="https://goo.gl/forms/d12oM7JY5z9rM0wx1"><span class="blinking">Click To Register!</span></a>
+  <div class="modal fade" id="myModal5" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -278,10 +315,10 @@ hr {
 <div class="container">
   <img src="images/arts.png" alt="Arts" style="width:100%">
     <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Arts</button>
-  <a class="ab" href="#"><span class="blinking">Click To Register!</span></a>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">Arts</button>
+  <a class="ab" href="https://goo.gl/forms/IfvSZDeOrZg1qfeo2"><span class="blinking">Click To Register!</span></a>
   <!-- Modal -->
-  <div class="modal fade" id="myModal5" role="dialog">
+  <div class="modal fade" id="myModal6" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
@@ -322,9 +359,9 @@ hr {
 <div class="container">
   <img src="images/photography.png" alt="Photography" style="width:100%">
     <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">Photography</button>
-  <a class="ab" href="#"><span class="blinking">Click To Register!</span></a>
-  <div class="modal fade" id="myModal6" role="dialog">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">Photography</button>
+  <a class="ab" href="https://goo.gl/forms/YrS6wTnAjhSVfMmf2"><span class="blinking">Click To Register!</span></a>
+  <div class="modal fade" id="myModal7" role="dialog">
     <div class="modal-dialog">
        <div class="modal-content">
         <div class="modal-header">
@@ -347,5 +384,6 @@ hr {
     </div>
   </div>
 </div>
+
 </body>
 </html>
