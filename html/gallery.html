@@ -3,10 +3,15 @@
 <head>
   <title>Cultural fest</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 body {
     background: lightblue url("img_tree.gif") no-repeat fixed center;
+    font-family: Arial, Helvetica, sans-serif;
 }
+* {box-sizing: border-box;}
 
 img {
     border: 2px solid #4CAF50;
@@ -18,7 +23,7 @@ img {
     text-align: center;
 	  overflow: hidden;
 	background-color: #f1b105;
-	padding: 20px 20px;
+	padding: 2px 2px;
 
 }
 
@@ -33,48 +38,452 @@ img:hover {
 a{
 	padding: 2px 3px ;
 	}
+
+
+  /* Set a style for all buttons */
+button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+div.gallery {
+  margin: 0px;
+  border: 1px solid white;
+  float: left;
+  width: 230px;
+
+}
+
+div.gallery:hover {
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+
+}
+
+
 </style>
 </head>
 <body>
 <!-- Header -->
 <div class="header">
-  <h1>Sathyabama cultural's</h1>
-  <h2>Gallery</h2>
+  <h1>Sathyabama Institute Of Science And Technology</h1>
 </div>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
-<a target="images" href="img_1.png">
-  <img src="images/img_1.png" alt="image" style="width:300px">
-</a>
+
+<div class="container">
+  <h2>2017 Cultural's</h2>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h4>The cultural fest of 2017 by Sathyabama was a massive celebration. Culturals was conducted on 17th August 2017 with students of Sathyabama decorating the venue brightly, with their happiness and excitement. The celebration commenced and included several contests that acted as a medium for the students to showcase their talent and also win attractive prizes. The Audience were delighted when the guests Ms. Samantha, Actress and Mr.Vijay Sethupathi Actor South Indian film industry stood among them. The students had an amazing time in the cultural fest 2017.</h4>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">2K17 Gallery</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>2k17</h1>
+      <hr>
+       <div class="gallery">
+          <a target="html/images/2017" href="img-30.jpeg">
+              <img src="images/2017/img-30.jpeg" alt="img" width="500" height="600">
+          </a>
+
+       </div>
+
+      <div class="gallery">
+          <a target="html/images/2017" href="img-31.jpeg">
+              <img src="img-31.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+
+      <div class="gallery">
+          <a target="html/images/2017" href="img-32.jpeg">
+              <img src="img-32.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+      <div class="gallery">
+          <a target="html/images/2017" href="img-33.jpeg">
+              <img src="img-33.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+      <div class="gallery">
+          <a target="html/images/2017" href="img-34.jpeg">
+              <img src="img-34.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+      <div class="gallery">
+          <a target="html/images/2017" href="img-35.jpeg">
+              <img src="img-35.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+      <div class="gallery">
+          <a target="html/images/2017" href="img-36.jpeg">
+              <img src="img-36.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+      <div class="gallery">
+          <a target="html/images/2017" href="img-37.jpeg">
+              <img src="img-37.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+      <div class="gallery">
+          <a target="html/images/2017" href="img-38.jpeg">
+              <img src="img-38.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+      <div class="gallery">
+          <a target="html/images/2017" href="img-39.jpeg">
+              <img src="img-39.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+      <div class="gallery">
+          <a target="html/images/2017" href="img-40.jpeg">
+              <img src="img-40.jpeg" alt="img" width="200" height="600">
+          </a>
+
+      </div>
+      <div class="gallery">
+          <a target="html/images/2017" href="img-37.jpeg">
+              <img src="img-37.jpeg" alt="img" width="200" height="600">
+          </a>
+          <hr>
+      </div>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Close</button>
+
+      </div>
+    </div>
+  </form>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>2018 Cultural's</h2>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h4>The cultural fest of Sathyabama 2018 was a great day of celebration with bright colours everywhere. Sathyabama Culturals was conducted on 16th and 17th February 2018. This celebration brought out the hidden talents within the youngsters of Sathyabama. Several competitions were conducted and the winners of every contest were awarded with cash prizes. The students were highly energetic throughout the celebration, and the exuberance of this cultural fest was at its peak, when the event was graced by the presence of Ms.Keerthi Suresh, Actress and Mr.Siva Karthikeyan, Actor South Indian film industry. The entire crowd was treated by Mr. Rahul Nambiar and Ms. Sharanya Srinivas troop&apos;s Musical Night</h4>
+    		<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">2K18 Gallery</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>2K18p</h1>
+      <hr>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-1.jpeg">
+              <img src="img-1.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-2.jpeg">
+              <img src="img-2.jpeg" alt="img" width="500" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-3.jpeg">
+              <img src="img-3.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-4.jpeg">
+              <img src="img-4.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-5.jpeg">
+              <img src="img-5.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-6.jpeg">
+              <img src="img-6.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-7.jpeg">
+              <img src="img-7.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-8.jpeg">
+              <img src="img-8.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-9.jpeg">
+              <img src="img-9.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-10.jpeg">
+              <img src="img-10.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-11.jpeg">
+              <img src="img-11.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-12.jpeg">
+              <img src="img-12.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-13.jpeg">
+              <img src="img-13.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-14.jpeg">
+              <img src="img-14.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-15.jpeg">
+              <img src="img-15.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-16.jpeg">
+              <img src="img-16.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-18.jpeg">
+              <img src="img-18.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-19.jpeg">
+              <img src="img-19.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-20.jpeg">
+              <img src="img-20.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-21.jpeg">
+              <img src="img-21.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-22.jpeg">
+              <img src="img-22.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-23.jpeg">
+              <img src="img-23.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-24.jpeg">
+              <img src="img-24.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-25.jpeg">
+              <img src="img-25.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-26.jpeg">
+              <img src="img-26.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-27.jpeg">
+              <img src="img-27.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-28.jpeg">
+              <img src="img-28.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+      <div class="gallery">
+          <a target="html/images/2018" href="img-29.jpeg">
+              <img src="img-29.jpeg" alt="img" width="200" height="600">
+          </a>
+      </div>
+
+      <hr>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Close</button>
+
+      </div>
+    </div>
+  </form>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>2019 Cultural's</h2>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3>Will be updated soon. stay tuned!</h3>
+    		<button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">2K19 Gallery</button>
+
+<div id="id03" class="modal">
+  <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>2K19</h1>
+      <hr>
+        <h2>NOTE: Will be updated after the cultural fest.</h2>
+      <hr>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Close</button>
+
+      </div>
+    </div>
+  </form>
+</div>
 
 
+    </div>
+  </div>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
