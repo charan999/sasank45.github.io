@@ -319,7 +319,6 @@ hr {
   <div class="overlay-content">
     <a href="events.html">Events</a>
     <a href="gallery.html">Gallery</a>
-    <a onclick="document.getElementById('id02').style.display='block'" style="cursor:pointer;">Instructions</a>
     <a onclick="document.getElementById('id01').style.display='block'" style="cursor:pointer;">Contact Us</a>
     <a onclick="document.getElementById('id04').style.display='block'" style="cursor:pointer;">Executive Members</a>
     <a onclick="document.getElementById('id03').style.display='block'" style="cursor:pointer;">Program Schedule</a>
@@ -329,32 +328,7 @@ hr {
 
 <span id="ab" style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 
-<div id="id02" class="modal">
-  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
-    <div class="container">
-      <h1>General Instructions</h1>
-      <hr>
-			 <ul>
-			 	<li>Prelims will be conducted between 12.00 noon to 3.00 pm from 4th February 2019 onwards.</li>
-				<li>Every participant is requested to register online for the corresponding event using Google Form.</li>
-				<li>For group events only one registration is required for a team.</li>
-				<li>Registration commences from 18rd January 2019 and closes by 1st February 2019.</li>
-				<li>Necessary materials and instruments have to be brought by the participants for all the events</li>
-				<li>Decision of the judge is final for all the events.</li>
-				<li>Participation in all events is restricted only for Sathyabama students except Final Years.</li>
-				<li>No act shall contain any offensive, obscene, disrespectful actions or gestures. The act will be
-immediately stopped and the entry will be disqualified, if these instructions are not followed.
-</li>
-			 </ul>
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Back</button>
-
-      </div>
-    </div>
-  </form>
-</div>
-
+ 
 <div id="id01" class="modal">
 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 <form class="modal-content" action="/action_page.php">
@@ -509,16 +483,7 @@ function closeNav() {
 }
 </script>
 
-<script>
-var modal = document.getElementById('id02');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+ 
 
 <script>
 //Get the modal
